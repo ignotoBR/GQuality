@@ -11,10 +11,11 @@ html{
 }
 
 .whats img{
-	width: 200px;
+	width: 300px;
 	position: fixed;
 	bottom:15px;
 	right: 15px;
+	z-index: 1;
 }
 
 /*MENU*/
@@ -89,10 +90,10 @@ nav{
     color: #2f5d87;*/
     
     color: #dddddd;
-    font-size: 200px;
+    font-size: 100px;
     font-family: century gothic;
     font-weight: bold;
-    text-shadow:  
+    /*text-shadow:  
       -1px -1px 0 #2f5d87, 
       -2px -2px 0 #2e5a83, 
       -3px -3px 0 #2d5880, 
@@ -106,7 +107,7 @@ nav{
       -11px -11px 0 #224361, 
       -12px -12px 0 #21405e, 
       -13px -13px 12px rgba(0, 0, 0, 0.55), 
-      -13px -13px 1px rgba(0, 0, 0, 0.5);
+      -13px -13px 1px rgba(0, 0, 0, 0.5);*/
 }
 
 .containerproje .slide-container .slide .contentproje p{
@@ -149,24 +150,18 @@ nav{
     background-size: cover;
     background-repeat: no-repeat;
 	background-attachment: fixed;
-    width: 82vw;
-    height: 100vh;
 }
 .containerproje .slide-container:nth-child(2) .slide{
     background: url(./imagens/img2.2.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 	background-attachment: fixed;
-    width: 82vw;
-    height: 100vh;
 }
 .containerproje .slide-container:nth-child(3) .slide{
     background: url(./imagens/img3.3.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 	background-attachment: fixed;
-    width: 82vw;
-    height: 100vh;
 }
 
 .containerproje #prev,
@@ -202,7 +197,6 @@ nav{
 
 /*A EMPRESA*/
 #aEmpresa {
-	height: 100vh;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-evenly;
@@ -241,7 +235,7 @@ nav{
 
 /*SERVIÇOS*/
 #servicos{
-	background-image: url(imagens/fundo6.jpg);
+	background-image: url(#);
 	background-size: 100%;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
@@ -251,7 +245,6 @@ nav{
 }
 
 .flex-container{
-	height: 100vh;
 	display: flex;
 	flex-wrap: wrap;
 	align-content: space-around;
@@ -290,7 +283,6 @@ nav{
 
 /*PORTFÓLIO*/
 #portfolio{
-	height: 100vh;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -321,9 +313,6 @@ nav{
 }
 
 .flex-containerPortfolio img:active{
-	width: 490px;
-	height: 465px;
-	transition: 2s;
 }
 
 .flex-itemPortfolio{
@@ -365,6 +354,7 @@ nav{
 	width: 550px;
 	height: 350px;
 	box-shadow: -4px 4px 10px 2px rgba(0, 0, 0, 0.2);
+	
 }
 
 
@@ -429,8 +419,44 @@ footer{
 		font-size: 100%;
 	}
 
+	.containerproje .slide-container .slide .contentproje h3{
+		font-size: 70px;
+		margin-left: 25px;
+	}
+
+	.containerproje .slide-container:nth-child(1) .slide{
+		background: url(./imagens/img1.2.jpg);
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+
+	}
+
+	.containerproje .slide-container:nth-child(2) .slide{
+		background: url(./imagens/img2.3.jpg);
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+	}
+
+	.containerproje .slide-container:nth-child(3) .slide{
+		background: url(./imagens/img3.4.jpg);
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+	}
+
+	.whats img{
+		width: 200px;
+	}
+
+	.containerproje .slide-container .slide .contentproje p{
+		margin-left: 25px;
+	}
+
 	#mapa{
 		width: 120%;
+		margin-top: 30px;
 	}
 
 	#aEmpresa, #portfolio, #contato{
