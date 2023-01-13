@@ -18,7 +18,7 @@ html{
 	z-index: 1;
 }
 
-/*MENU*/
+/*----------MENU----------*/
 nav{
 	display: flex;
 }
@@ -56,9 +56,9 @@ nav{
 	color: rgb(185, 185, 185);
 	transition: 0.4s;
 }
-/*FIM DO MENU*/
+/*----------FIM DO MENU----------*/
 
-/*PRIMEIRA PÁGINA*/
+/*----------PRIMEIRA PÁGINA----------*/
 .containerproje{
     position: relative;
 }
@@ -164,13 +164,13 @@ nav{
 	background-attachment: fixed;
 }
 
-.containerproje #prev,
+/*.containerproje #prev,
 .containerproje #next{
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
     color: rgb(0, 0, 0);
-    /*background: #230ef4;*/
+    background: #230ef4;
     height: 50px;
     width: 50px;
     line-height: 50px;
@@ -179,23 +179,11 @@ nav{
     cursor: pointer;
     font-weight: bolder;
     border-radius: 50px;
-}
+}*/
 
-.containerproje #prev:hover,
-.containerproje #next:hover{
-    opacity: 0.2;
-}
+/*----------FIM DA PRIMEIRA PÁGINA----------*/
 
-.containerproje #prev{
-    left: 20px;
-}
-
-.containerproje #next{
-    right: 20px;
-}
-/*FIM DA PRIMEIRA PÁGINA*/
-
-/*A EMPRESA*/
+/*----------A EMPRESA----------*/
 #aEmpresa {
 	display: flex;
 	flex-wrap: wrap;
@@ -220,6 +208,10 @@ nav{
 	background-repeat: no-repeat;
 }
 
+.aEmpresa h1{
+	margin-top: 35px;
+}
+
 .aEmpresa p{
 	font-size: 15px;
 	margin: 20px 30px 20px 30px;
@@ -230,10 +222,11 @@ nav{
 	font-size: 15px;
 	margin: 20px 30px 20px 30px;
 	text-align: center;
+	border: 2px solid red;
 }
-/*FIM A EMPRESA*/
+/*----------FIM A EMPRESA----------*/
 
-/*SERVIÇOS*/
+/*----------SERVIÇOS----------*/
 #servicos{
 	background-image: url(#);
 	background-size: 100%;
@@ -241,8 +234,6 @@ nav{
 	background-attachment: fixed;
 }
 
-#servicos h1{
-}
 
 .flex-container{
 	display: flex;
@@ -279,9 +270,9 @@ nav{
 	width: 80px;
 	height: 80px;
 }
-/*FIM SERVIÇOS*/
+/*----------FIM SERVIÇOS----------*/
 
-/*PORTFÓLIO*/
+/*----------PORTFÓLIO----------*/
 #portfolio{
 	display: flex;
 	flex-direction: column;
@@ -321,7 +312,7 @@ nav{
 	height: 265px;
 	margin: 14px;
 }
-/*FIM PORTFÓLIO*/
+/*----------FIM PORTFÓLIO----------*/
 
 #contato{
 	display: flex;
@@ -369,7 +360,7 @@ footer{
 
 
 
-/*ANIMAÇÕES*/
+/*----------ANIMAÇÕES----------*/
 @keyframes go-back{
 	0%{
 		transform: translateX(700px);
@@ -390,9 +381,9 @@ footer{
 	  color: black; 
 	}
 }
-/*FIM ANIMAÇÕES*/
+/*----------FIM ANIMAÇÕES----------*/
 
-/*RESPONSIVIDADE SEÇÕES*/
+/*----------RESPONSIVIDADE SEÇÕES----------*/
 @media screen and (max-width: 700px) {
 	#home{
 		width: 100%;
@@ -424,6 +415,10 @@ footer{
 		margin-left: 25px;
 	}
 
+	.containerproje .slide-container .slide .contentproje .bntproj{
+		margin-left: 25px;
+	}
+
 	.containerproje .slide-container:nth-child(1) .slide{
 		background: url(./imagens/img1.2.jpg);
 		background-size: cover;
@@ -447,7 +442,7 @@ footer{
 	}
 
 	.whats img{
-		width: 200px;
+		width: 180px;
 	}
 
 	.containerproje .slide-container .slide .contentproje p{
@@ -464,4 +459,93 @@ footer{
 	}
 
 }
-/*FIM DA RESPONSIVIDADE SEÇÕES*/
+/*----------FIM DA RESPONSIVIDADE SEÇÕES----------*/
+
+/*----------SCROLL----------*/
+.demo a {
+	position: absolute;
+	bottom: 0px;
+	left: 50%;
+	z-index: 1;
+	display: inline-block;
+	transform: translate(0, -50%);
+	color: #fff;
+	font : normal 400 20px/1 'Josefin Sans', sans-serif;
+	letter-spacing: .1em;
+	text-decoration: none;
+	transition: opacity .3s;
+  }
+  .demo a:hover {
+	opacity: .5;
+  }
+
+#scroll a {
+	padding-top: 60px;
+  }
+#scroll a span {
+	position: absolute;
+	top: 0;
+	left: 47%;
+	width: 24px;
+	height: 24px;
+	margin-left: -12px;
+	border-left: 1px solid #fff;
+	border-bottom: 1px solid #fff;
+	transform: rotate(-45deg);
+	animation: sdb05 1.5s infinite;
+	box-sizing: border-box;
+}
+
+@keyframes sdb05 {
+	0% {
+		transform: rotate(-45deg) translate(0, 0);
+		opacity: 0;
+	}
+	50% {
+		opacity: 1;
+	}
+	100% {
+		transform: rotate(-45deg) translate(-20px, 20px);
+		opacity: 0;
+	}
+}
+/*----------FIM SCROLL----------*/
+
+/*----------PRÓXIMO SLIDE----------*/
+.prevNext a {
+	position: absolute;
+	top: 50%;
+	width: 100%;
+	z-index: 1;
+	color: #fff;
+	transition: opacity .3s;
+	z-index: 1;
+  }
+  
+  .prevNext a:hover {
+	opacity: .5;
+  }
+
+#prev a span {
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	left: 20px;
+	border-left: 1px solid #fff;
+	border-bottom: 1px solid #fff;
+	transform: rotate(45deg);	
+}
+
+#next a span {
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	right: 20px;
+	border-left: 1px solid #fff;
+	border-bottom: 1px solid #fff;
+	transform: rotate(225deg);
+}
+/*----------FIM PRÓXIMO SLIDE---------*/
+
+
+
