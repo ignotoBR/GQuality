@@ -16,22 +16,25 @@
 			<div id="inicio"></div>
 			<ul class="menu">
 				<li><a href="#inicio">Home</a></li>
-				<li><a href="#aEmpresa">A empresa</a></li>
-				<li><a href="#servicos">Serviços</a></li>
-				<li><a href="#portfolio">Portfólio</a></li>
-				<li><a href="#contato">Contato</a></li>
+				<li><a href="#container-empresa">A empresa</a></li>
+				<li><a href="#container-servicos">Serviços</a></li>
+				<li><a href="#container-portfolio">Portfólio</a></li>
+				<li><a href="#container-contato">Contato</a></li>
 			</ul>
 		</nav>
         <!--FIM DO MENU-->
 
-
-		<div id="prev" class="prevNext" onclick="prev()">
-			<a href="#"><span></span></a>
-		</div>
-		
-		<div id="next" class="prevNext" onclick="next()">
-			<a href="#"><span></span></a>
-		</div>
+		<!--PRÓXIMO SLIDE-->
+		<div>
+			<div id="prev" class="prevNext" onclick="prev()">
+				<a href="#"><span></span></a>
+			</div>
+			
+			<div id="next" class="prevNext" onclick="next()">
+				<a href="#"><span></span></a>
+			</div>
+		</div>	
+		<!--FIM PRÓXIMO SLIDE-->
 		
 			
 		<!--LINK WHATSAPP-->
@@ -89,9 +92,6 @@
 					<a href="#aEmpresa"><span></span></a>
 				</section>
 
-
-
-
 				<!--<div id="prev" onclick="prev()"> « </div>
 
 				<div id="next" onclick="next()"> » </div>-->
@@ -100,11 +100,11 @@
 			<!--FIM PRIMEIRA PÁGINA-->
 
 			<!--A EMPRESA-->
-			<section id="aEmpresa">
+			<section id="container-empresa">
 				<div class="aEmpresa">
 					<h1>A EMPRESA</h1>
 					<p>
-						Ao contrário da crença popular, Lorem Ipsum não é simplesmente um texto aleatório. Tem raízes em uma peça da literatura latina clássica de 45 aC, com mais de 2000 anos. Richard McClintock, professor de latim do Hampden-Sydney College, na Virgínia, pesquisou uma das palavras latinas mais obscuras, consectetur, de uma passagem de Lorem Ipsum, e percorrendo as citações da palavra na literatura clássica, descobriu a fonte indubitável. Lorem Ipsum vem das seções 1.10.32 e 1.10.33 de "de Finibus Bonorum et Malorum" (Os Extremos do Bem e do Mal) de Cícero, escrito em 45 aC.
+						Ao contrário da crença popular, Lorem não é simplesmente um texto aleatório. Tem raízes em uma peça da literatura latina clássica de 45 aC, com mais de 2000 anos. Richard McClintock, professor de latim do Hampden-Sydney College, na Virgínia, pesquisou uma das palavras latinas mais obscuras, consectetur, de uma passagem de Lorem Ipsum, e percorrendo as citações da palavra na literatura clássica, descobriu a fonte indubitável. Lorem Ipsum vem das seções 1.10.32 e 1.10.33 de "de Finibus Bonorum et Malorum" (Os Extremos do Bem e do Mal) de Cícero, escrito em 45 aC.
 					</p>
 				</div>
 				<div class="aEmpresa2">
@@ -116,36 +116,38 @@
 			<!--FIM A EMPRESA-->
 
 			<!--SERVICOS-->
-			<section id="servicos">
+			<section id="container-servicos">
 				<div class="servicos">
-					<h1>SERVIÇOS</h1>	
-					<div class="flex-container">
-						<div class="flex-item">
+
+					<h1>SERVIÇOS</h1>
+
+					<div class="flex-containerServicos">
+						<div class="flex-item 1">
 							<img class="iconeServicos" src="imagens/icones_sinalização_interna_externa-80x80.png">
 							<h4>Sinalização Interna e Externa</h4>
 							<p>Este tipo de sinalização é utilizado em diversos segmentos, uma sinalização bem objetiva ajuda no bom funcionamento do fluxo interno e externo de um ambiente.</p>
 						</div>
-						<div class="flex-item">
+						<div class="flex-item 2">
 							<img class="iconeServicos" src="imagens/icones_emergência-80x80.png">
 							<h4>Sinalização de Segurança</h4>
 							<p>Para prevenção de acidentes, identificação de equipamentos, delimitar áreas,  alertar sobre os riscos existentes no ambiente.</p>
 						</div>
-						<div class="flex-item">
+						<div class="flex-item 3">
 							<img class="iconeServicos" src="imagens/icones_impressora-80x80.png">
 							<h4>Impressão Digital</h4>
 							<p>A Novo Conceito possui tudo o que a sua empresa necessita em comunicação visual. Banners, faixas, adesivos e outros serviços.</p>
 						</div>
-						<div class="flex-item">
+						<div class="flex-item 4">
 							<img class="iconeServicos" src="imagens/icones_corte_laser-80x80.png">
 							<h4>Cortes Laser</h4>
 							<p>Peças de acrílico, MDF, EVA entre outros, com cortes precisos feitos a laser. Projetos executados com precisão e qualidade.</p>
 						</div>
-						<div class="flex-item">
+						<div class="flex-item 5">
 							<img class="iconeServicos" src="imagens/icones_gravação_laser-80x80.png">
 							<h4>Gravações</h4>
 							<p>Personalize seu brinde, conheça o processo de gravação a laser e garanta a qualidade e satisfação para o seu produto.</p>
 						</div>
-						<div class="flex-item">
+						<div class="flex-item 6">
 							<img class="iconeServicos" src="imagens/icones_estruturas-80x80.png">
 							<h4>Estruturas e Substratos</h4>
 							<p>Combinações de materiais e técnicas diversas (Aço, Alumínio, Aço inox, Aço escovado, Vidro, Acrílico, Poliestireno, MDF).</p>
@@ -156,39 +158,37 @@
 			<!--FIM SERVICOS-->
 
 			<!--PORTFOLIO-->
-			<section id="portfolio">
+			<section id="container-portfolio">
 				<div class="portfolio">
-					<h1>CONHEÇA O <br>NOSSO PORTFÓLIO</h1>
-				</div>
-				
-				<div class="portfolio">
-					<p>
+
+					<h1>CONHEÇA O <br><span class="azul">NOSSO PORTFÓLIO</span></h1>
+							
 						<div class="flex-containerPortfolio">
-							<div class="flex-itemPortfolio">
+							<div class="flex-item 1">
 								<img class="imgPortfolio" src="imagens/IMG_9148.jpeg">
 							</div>
-							<div class="flex-itemPortfolio">
+							<div class="flex-item 2">
 								<img class="imgPortfolio" src="imagens/cacau_show.jpeg">
 							</div>
-							<div class="flex-itemPortfolio">
+							<div class="flex-item 3">
 								<img class="imgPortfolio" src="imagens/cielo.jpeg">
 							</div>
-							<div class="flex-itemPortfolio">
+							<div class="flex-item 4">
 								<img class="imgPortfolio" src="imagens/doffee.jpeg">
 							</div>
-							<div class="flex-itemPortfolio">
+							<div class="flex-item 5">
 								<img class="imgPortfolio" src="imagens/donuts.jpeg">
 							</div>
-							<div class="flex-itemPortfolio">
+							<div class="flex-item 6">
 								<img class="imgPortfolio" src="imagens/flor.jpeg">
-							</div>
-					</p>
-				</div>
+							</div>					
+						</div>
+				</div>	
 			</section>
 			<!--FIM PORTFOLIO-->
 
 			<!--CONTATO-->
-			<section id="contato">
+			<section id="container-contato">
 				<div class="contato">
 					
 					<h1>ENTRE EM <br> CONTATO CONOSCO</h1>
