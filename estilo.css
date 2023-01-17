@@ -68,13 +68,12 @@ nav{
 }
 
 .containerproje .slide-container .slide{
-    min-height: 100vh;
+    min-height: 40vh;
     display: flex;
     align-items: center;
-    flex-wrap: wrap;
+    /*flex-wrap: wrap;
     gap: 15px;
-    padding: 20px 9%;
-    padding-bottom: 0px;
+    padding: 20px 9%;*/
 }
 
 .containerproje .slide-container .slide .contentproje{
@@ -92,7 +91,7 @@ nav{
 .containerproje .slide-container .slide .contentproje h3{
     /*font-size: 200px;
     color: #2f5d87;*/
-    
+    margin-left: 50px;
     color: #dddddd;
     font-size: 100px;
     font-family: century gothic;
@@ -116,6 +115,7 @@ nav{
 
 .containerproje .slide-container .slide .contentproje p{
     font-size: 18px;
+	margin-left: 60px;
     color: #ffff;
     font-family: century gothic;
     width: 40%;
@@ -186,6 +186,43 @@ nav{
 }*/
 
 /*----------FIM DA PRIMEIRA PÁGINA----------*/
+
+
+/*----------PRÓXIMO SLIDE----------*/
+.prevNext a {
+	position: absolute;
+	top: 20vh;
+	width: 100%;
+	z-index: 1;
+	color: #fff;
+	transition: opacity .3s;
+	z-index: 1;
+  }
+  
+  .prevNext a:hover {
+	opacity: .5;
+  }
+
+#prev a span {
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	left: 20px;
+	border-left: 1px solid #fff;
+	border-bottom: 1px solid #fff;
+	transform: rotate(45deg);	
+}
+
+#next a span {
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	right: 20px;
+	border-left: 1px solid #fff;
+	border-bottom: 1px solid #fff;
+	transform: rotate(225deg);
+}
+/*----------FIM PRÓXIMO SLIDE---------*/
 
 
 /*----------A EMPRESA----------*/
@@ -365,7 +402,7 @@ nav{
 
 .entre_em_contato .icone{
 	display: flex;
-	margin-top: 35px;
+	margin: 35px 15px 0px 15px;
 }
 
 .imgContato img{
@@ -383,7 +420,7 @@ nav{
 
 /*----------MAPA----------*/
 #mapa{
-	width: 700px;
+	width: 600px;
 	height: 400px;
 	box-shadow: -4px 4px 10px 2px rgba(0, 0, 0, 0.2);
 }
@@ -493,7 +530,7 @@ footer{
 	}	
 
 	#mapa{
-		width: 100vw;
+		width: 90vw;
 	}
 
 	#container-empresa, #container-portfolio, #container-contato{
@@ -504,7 +541,7 @@ footer{
 	}
 
 	.entre_em_contato .icone{
-		width: 100vw;
+		width: 90vw;
 	}
 
 	.imgContato img{
@@ -570,41 +607,7 @@ footer{
 /*----------FIM SCROLL----------*/
 
 
-/*----------PRÓXIMO SLIDE----------*/
-.prevNext a {
-	position: absolute;
-	top: 50%;
-	width: 100%;
-	z-index: 1;
-	color: #fff;
-	transition: opacity .3s;
-	z-index: 1;
-  }
-  
-  .prevNext a:hover {
-	opacity: .5;
-  }
 
-#prev a span {
-	position: absolute;
-	width: 20px;
-	height: 20px;
-	left: 20px;
-	border-left: 1px solid #fff;
-	border-bottom: 1px solid #fff;
-	transform: rotate(45deg);	
-}
-
-#next a span {
-	position: absolute;
-	width: 20px;
-	height: 20px;
-	right: 20px;
-	border-left: 1px solid #fff;
-	border-bottom: 1px solid #fff;
-	transform: rotate(225deg);
-}
-/*----------FIM PRÓXIMO SLIDE---------*/
 
 
 
