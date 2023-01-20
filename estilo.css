@@ -8,15 +8,19 @@
 	/*font-family: 'Inter', sans-serif;*/
 }
 
-header{
-	background-color: #000000;
+/*header{
 	box-shadow: 0px 3px 10px #464646;
-}
+}*/
 
+
+/*----------MENU----------*/
 .nav-bar{
 	display: flex;
 	align-items:center;
-	background-color: #000000;
+	backface-visibility: hidden;
+	position: fixed;
+	z-index: 1;
+	margin: 10px 0 0 10px;
 }
 
 /*.logo{
@@ -41,42 +45,45 @@ header{
 
 .nav-item{
 	margin: 0 15px;
-	padding: 15px;
+	padding: 5px;
 }
 
 .nav-link{
 	text-decoration: none;
 	font-size: 1.15rem;
-	color: rgb(255, 255, 255);
+	color: rgb(0, 0, 0);
 	font-weight: 400;
 }
 
-.login-button button{
-	border: none;
-	background-color: #ffffff;
-	padding: 10px 15px;
-	border-radius: 5px;
-}
-
-.login-button button a{
-	text-decoration: none;
-	color: rgb(0, 0, 0);
-	font-weight: 500;
-	font-size: 1.1rem;
+.mobile-menu{
+	position: fixed;
+	display:none;
+	z-index: 2;
+	background-color: #3c80ffee;
+	margin: 50px 0 0 15px;
+	border-radius: 10px;
 }
 
 .mobile-menu-icon{
+	align-content: center;
+	position: fixed;
 	display: none;
+	z-index: 3;
+	
+	border-radius: 15px;
 }
 
-.mobile-menu{
-	display: none;
+.mobile-menu-icon img{
+	width: 40px;
+	opacity: 0.8;
+	margin: -15px 0 0 -85px;
 }
+
+
 
 @media screen and (max-width: 730px){
 	.nav-bar{
 		padding: 1.5rem 4rem;
-		height: 0px;
 	}
 	.nav-item{
 		display: none;
@@ -105,7 +112,7 @@ header{
 	}
 	.mobile-menu .nav-item{
 		display: block;
-		padding-top: 1.2rem;
+		padding-top: 1rem;
 	}
 	.mobile-menu .login-button{
 		display: block;
@@ -121,19 +128,12 @@ header{
 	display: block;
 }
 
-
-
-
-
-
-
-
-
-
+/*----------FIM DO MENU----------*/
 
 html{
 	scroll-behavior: smooth;
 }
+
 
 /*----------BOTÃO WHATSAPP----------*/
 .whats img{
@@ -144,47 +144,6 @@ html{
 	z-index: 1;
 }
 /*----------FIM BOTÃO WHATSAPP----------*/
-
-
-/*----------MENU----------*/
-/*nav{
-	display: flex;
-}
-
-.menu{
-    font-family: century gothic;
-    font-size: 15px;
-	display: flex;
-	justify-content: center;
-	text-align: center;
-	position: fixed;
-	width: 100%;
-	height: 35px;
-	opacity: 1;
-	border-radius: 0px;
-	border: 0px solid white;
-	z-index: 1;
-	background: #044BD9;
-}
-
-.menu li{
-	list-style-type: none;
-	margin: 0px 0px 0px 0px;
-	padding: 10px;
-	font-weight: 400;
-}
-
-.menu li a{
-	text-decoration: none;
-	color: rgb(255, 255, 255);
-}
-
-.menu li a:hover{
-	text-decoration: underline 2px;
-	color: rgb(185, 185, 185);
-	transition: 0.4s;
-}
-/*----------FIM DO MENU----------*/
 
 
 /*----------PRIMEIRA PÁGINA----------*/
@@ -214,8 +173,6 @@ html{
 }
 
 .containerproje .slide-container .slide .contentproje h3{
-    /*font-size: 200px;
-    color: #2f5d87;*/
     margin-left: 50px;
     color: #F2F2F2;
     font-size: 100px;
@@ -247,10 +204,10 @@ html{
     height: 10%;
 }
 
-.containerproje .slide-container .slide .contentproje .bntproj{
+/*.containerproje .slide-container .slide .contentproje .bntproj{
     margin-top: 10px;
     display: inline-block;
-    /*background: #008cff;*/
+    background: #008cff;
     color: #ffff;
     font-size: 17px;
     padding: 9px 40px;
@@ -264,7 +221,7 @@ html{
     background: #3c80ff;
     border: 2px solid #3c80ff;
     color: #ffff;
-}
+}*/
 
 .containerproje .slide-container{
     display: none;
@@ -274,23 +231,20 @@ html{
     display: block;
 }
 
-.containerproje .slide-container:nth-child(1) .slide{
-    background: url(./imagens/img3.3.jpg);
-    background-size:auto;
-    background-repeat: no-repeat;
-	background-attachment: fixed;
-}
 .containerproje .slide-container:nth-child(2) .slide{
-    background: url(./imagens/img2.2.jpg);
+    background: url(./imagens/cielo.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
-	background-attachment: fixed;
 }
 .containerproje .slide-container:nth-child(3) .slide{
-    background: url(./imagens/img1.2.jpg);
+    background: url(./imagens/cacau_show.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
-	background-attachment: fixed;
+}
+.containerproje .slide-container:nth-child(4) .slide{
+	background: url(./imagens/doffee.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 /*.containerproje #prev,
@@ -319,14 +273,14 @@ html{
 	top: 20vh;
 	width: 100%;
 	z-index: 1;
-	color: #fff;
+	color: rgb(255, 255, 255);
 	transition: opacity .3s;
 	z-index: 1;
   }
   
-  .prevNext a:hover {
+.prevNext a:hover {
 	opacity: .5;
-  }
+}
 
 #prev a span {
 	position: absolute;
@@ -488,10 +442,6 @@ html{
 	transition: 1.5s;
 }
 
-.flex-containerPortfolio img:active{
-
-}
-
 .azul{
 	color: #3c80ff;
 	text-decoration: underline;
@@ -516,8 +466,6 @@ html{
 	margin-bottom: 50px;
 }
 
-.contato2{
-}
 
 .contato h1{
 	margin-top: 30px;
@@ -551,18 +499,6 @@ html{
 /*----------FIM MAPA----------*/
 
 
-/*----------RODAPÉ----------*/
-footer{
-	width: 100%;
-	height: 100px;
-	background-color: black;
-	color: white;
-	text-align: center;
-	margin-top: 100px;
-}
-/*----------FIM RODAPÉ----------*/
-
-
 /*----------ANIMAÇÕES----------*/
 @keyframes go-back{
 	0%{
@@ -588,65 +524,31 @@ footer{
 
 
 /*----------RESPONSIVIDADE SEÇÕES----------*/
-@media screen and (max-width: 700px) {
-	#home{
-		width: 100%;
-		background-image: url(imagens/fundo4.jpg);
-		background-repeat: no-repeat;
-		background-attachment: fixed;
-		background-size: 200% 100%;
-	}
-
-	.home{
-		width: 100%;
-	}
-
-	.home h1{
-		font-size: 80px;
-		text-align: center;
-	}
-
-	.home p{
-		margin: 20px 30px 20px 30px;
-		text-align: center;
-		font-family: 'Comfortaa', arial, cursiva;
-		animation: mudaCor 10s;
-		font-size: 100%;
-	}
+@media screen and (max-width: 730px) {
 
 	.containerproje .slide-container .slide .contentproje h3{
 		font-size: 70px;
-		margin-left: 15px;
+		margin-left: 40px;
 	}
 
 	.containerproje .slide-container .slide .contentproje p{
-		margin-left: 20px;
-	}
-
-	.containerproje .slide-container .slide .contentproje .bntproj{
-		margin-left: 20px;
-	}
-
-	.containerproje .slide-container:nth-child(1) .slide{
-		background: url(./imagens/img1.2.jpg);
-		background-size: cover;
-		background-repeat: no-repeat;
-		background-attachment: fixed;
-
+		margin-left: 48px;
 	}
 
 	.containerproje .slide-container:nth-child(2) .slide{
-		background: url(./imagens/img2.3.jpg);
+		background: url(./imagens/img1.1.jpg);
 		background-size: cover;
 		background-repeat: no-repeat;
-		background-attachment: fixed;
 	}
-
 	.containerproje .slide-container:nth-child(3) .slide{
-		background: url(./imagens/img3.4.jpg);
+		background: url(./imagens/img3.3.jpg);
 		background-size: cover;
 		background-repeat: no-repeat;
-		background-attachment: fixed;
+	}
+	.containerproje .slide-container:nth-child(4) .slide{
+		background: url(./imagens/img2.2.jpg);
+		background-size: cover;
+		background-repeat: no-repeat;
 	}
 
 	.whats img{
@@ -655,9 +557,6 @@ footer{
 
 	#mapa{
 		width: 90vw;
-	}
-
-	#container-empresa, #container-portfolio, #container-contato{
 	}
 
 	.flex-containerPortfolio{
@@ -675,13 +574,12 @@ footer{
 	.textoContato{
 		font-size: 16px;
 	}
-
 }
 /*----------FIM DA RESPONSIVIDADE SEÇÕES----------*/
 
 
 /*----------SCROLL----------*/
-.demo a {
+/*.demo a {
 	position: absolute;
 	bottom: 0px;
 	left: 50%;
@@ -700,6 +598,7 @@ footer{
 
 #scroll a {
 	padding-top: 60px;
+	
   }
 #scroll a span {
 	position: absolute;
@@ -727,10 +626,19 @@ footer{
 		transform: rotate(-45deg) translate(-20px, 20px);
 		opacity: 0;
 	}
-}
+}*/
 /*----------FIM SCROLL----------*/
 
-
+/*----------RODAPÉ----------*/
+footer{
+	width: 100%;
+	height: 100px;
+	background-color: black;
+	color: white;
+	text-align: center;
+	margin-top: 100px;
+}
+/*----------FIM RODAPÉ----------*/
 
 
 

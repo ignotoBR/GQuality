@@ -11,8 +11,9 @@
 	</head>
 
 	<body>
-		<!----------MENU---------->
-		<header>
+
+		<!----------NAV-BAR RESPONSIVO---------->
+		<header>			
 			<nav class="nav-bar">
 				<!--<div class="logo">
 					<h1>Logo</h1>
@@ -21,9 +22,9 @@
 				<div class="nav-list">
 					<ul>
 						<li class="nav-item"><a href="#" class="nav-link">Inicío</a></li>
-						<li class="nav-item"><a href="#" class="nav-link">A empresa</a></li>
-						<li class="nav-item"><a href="#" class="nav-link">Serviços</a></li>
-						<li class="nav-item"><a href="#" class="nav-link">Portfólio</a></li>
+						<li class="nav-item"><a href="#container-empresa" class="nav-link">A empresa</a></li>
+						<li class="nav-item"><a href="#container-servicos" class="nav-link">Serviços</a></li>
+						<li class="nav-item"><a href="#container-portfolio" class="nav-link">Portfólio</a></li>
 						<li class="nav-item"><a href="#" class="nav-link">Contato</a></li>
 					</ul>
 				</div>
@@ -33,41 +34,35 @@
 				</div>-->
 
 				<div class="mobile-menu-icon">
-					<button onclick="menuShow()"><img class="icon" src="icones/menu_white_36dp.svg"></button>
+					<button onclick="menuShow()"><img class="icon" src="icones/close.png"></button>
 				</div>
 			</nav>
 
 			<div class="mobile-menu">
 				<ul>
 					<li class="nav-item"><a href="#" class="nav-link">Inicío</a></li>
-						<li class="nav-item"><a href="#" class="nav-link">A empresa</a></li>
-						<li class="nav-item"><a href="#" class="nav-link">Serviços</a></li>
-						<li class="nav-item"><a href="#" class="nav-link">Portfólio</a></li>
-						<li class="nav-item"><a href="#" class="nav-link">Contato</a></li>
+						<li class="nav-item"><a href="#container-empresa" class="nav-link">A empresa</a></li>
+						<li class="nav-item"><a href="#container-servicos" class="nav-link">Serviços</a></li>
+						<li class="nav-item"><a href="#container-portfolio" class="nav-link">Portfólio</a></li>
+						<li class="nav-item"><a href="#container-contato" class="nav-link">Contato</a></li>
 				</ul>
 				
 				<!--<div class="login-button">
 					<button><a href="#">Entrar</a></button>
 				</div>-->
+			</div>			
+		</header>		
+		<!----------FIM NAV-BAR RESPONSIVO---------->
+				
+			<!--LINK WHATSAPP-->
+			<div class="whats">
+				<a href="https://wa.me/5541997163672?text=Olá, gostaria de tirar algumas dúvidas." target="_blank"><img src="imagens/whatsapp2.png"></a>
 			</div>
-
-		</header>
-		<!----------FIM MENU---------->
-
-		<!--PRÓXIMO SLIDE-->
-		
-		<!--FIM PRÓXIMO SLIDE-->
-		
+			<!--LINK WHATSAPP-->
 			
-		<!--LINK WHATSAPP-->
-		<div class="whats">
-			<a href="https://wa.me/5541997163672?text=Olá, gostaria de tirar algumas dúvidas." target="_blank"><img src="imagens/whatsapp2.png"></a>
-		</div>
-		<!--LINK WHATSAPP-->
-
-		<main class="secoes">
-
 			<!--PRIMEIRA PÁGINA-->
+			
+
 			<section class="containerproje">
 
 				<div>
@@ -79,7 +74,7 @@
 						<a href="#"><span></span></a>
 					</div>
 				</div>	
-
+				
 				<div class="slide-container active">
 					<div class="slide">
 						<div class="contentproje">
@@ -87,13 +82,12 @@
 							<p>
 								Comunicação visual
 							</p>
-							<br>
 							<!--<a href="#" class="bntproj">Saiba mais</a>-->
 							
 						</div>
 					</div>
 				</div>
-	
+
 				<div class="slide-container">
 					<div class="slide">
 						<div class="contentproje">
@@ -101,12 +95,12 @@
 							<p>
 								Comunicação visual
 							</p>
-							<br>
 							<!--<a href="#" class="bntproj">Saiba mais</a>-->
+							
 						</div>
 					</div>
 				</div>
-	
+
 				<div class="slide-container">
 					<div class="slide">
 						<div class="contentproje">
@@ -114,24 +108,28 @@
 							<p>
 								Comunicação visual
 							</p>
-							<br>
 							<!--<a href="#" class="bntproj">Saiba mais</a>-->
+							
 						</div>
 					</div>
 				</div>
+			</section>
+				
 
 				
-				<section id="scroll" class="demo">
-					<a href="#aEmpresa"><span></span></a>
-				</section>
-
-				<!--<div id="prev" onclick="prev()"> « </div>
-
-				<div id="next" onclick="next()"> » </div>-->
-	
+			<section id="scroll" class="demo">
+				<a href="#aEmpresa"><span></span></a>
 			</section>
-			<!--FIM PRIMEIRA PÁGINA-->
 
+			<!--<div id="prev" onclick="prev()"> « </div>
+
+			<div id="next" onclick="next()"> » </div>-->
+	
+					
+			<!--FIM PRIMEIRA PÁGINA-->
+		
+		
+		<main class="secoes">	
 			<!--A EMPRESA-->
 			<section id="container-empresa">
 				<div class="aEmpresa">
