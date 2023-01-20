@@ -59,7 +59,7 @@
 	position: fixed;
 	display:none;
 	z-index: 2;
-	background-color: #3c80ffee;
+	background-color: #91bbf2ec;
 	margin: 50px 0 0 15px;
 	border-radius: 10px;
 }
@@ -318,6 +318,10 @@ html{
 	width: 550px;
 }
 
+.aEmpresa img{
+	width: 500px;
+}
+
 .aEmpresa2{
 	display: flex;
 	flex-direction: column;
@@ -432,14 +436,16 @@ html{
 }
 
 .flex-containerPortfolio img{
+	border: 10px solid transparent;
 	width: 290px;
 	height: 265px;
 }
 
 .flex-containerPortfolio img:hover{
 	cursor: pointer;
-	transform: scale(1.2);
-	transition: 1.5s;
+	border: 10px solid rgb(192, 192, 192);
+	/*transform: scale(1.2);*/
+	transition: 0.3s;
 }
 
 .azul{
