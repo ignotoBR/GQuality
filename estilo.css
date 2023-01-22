@@ -59,9 +59,10 @@
 	position: fixed;
 	display:none;
 	z-index: 2;
-	background-color: #91bbf2ec;
-	margin: 50px 0 0 15px;
-	border-radius: 10px;
+	background-color: #91bbf2ef;
+	margin: 40px 0 0 0px;
+	border-radius: 0px;
+	border-radius: 0px 20px 20px 0px;
 }
 
 .mobile-menu-icon{
@@ -69,14 +70,12 @@
 	position: fixed;
 	display: none;
 	z-index: 3;
-	
-	border-radius: 15px;
+	border-radius: 0px;
 }
 
 .mobile-menu-icon img{
 	width: 40px;
-	opacity: 0.8;
-	margin: -15px 0 0 -85px;
+	margin: -25px 0 0 -105px;
 }
 
 
@@ -319,7 +318,7 @@ html{
 }
 
 .aEmpresa img{
-	width: 500px;
+	width: 390px;
 }
 
 .aEmpresa2{
@@ -341,13 +340,13 @@ html{
 }
 
 .aEmpresa p{
-	font-size: 15px;
+	font-size: 18px;
 	margin: 10px 30px 20px 30px;
 	text-align: center;
 }
 
 .aEmpresa2 p{
-	font-size: 15px;
+	font-size: 18px;
 	margin: 35px 30px 20px 30px;
 	text-align: center;
 }
@@ -384,7 +383,7 @@ html{
 
 .flex-item p{
 	margin-top: 15px;
-	font-size: 15px;
+	font-size: 16px;
 	text-align:center;
 }
 
@@ -578,7 +577,7 @@ html{
 	}
 
 	.textoContato{
-		font-size: 16px;
+		font-size: 14px;
 	}
 }
 /*----------FIM DA RESPONSIVIDADE SEÇÕES----------*/
