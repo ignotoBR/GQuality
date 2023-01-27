@@ -13,45 +13,25 @@
 	<body>
 
 		<!----------NAV-BAR RESPONSIVO---------->
-		<header>			
-			<nav class="nav-bar">
-				<!--<div class="logo">
-					<h1>Logo</h1>
-				</div>-->
-
-				<div class="nav-list">
-					<ul>
-						<li class="nav-item"><a href="#" class="nav-link">Inicío</a></li>
-						<li class="nav-item"><a href="#container-empresa" class="nav-link">A empresa</a></li>
-						<li class="nav-item"><a href="#container-servicos" class="nav-link">Serviços</a></li>
-						<li class="nav-item"><a href="#container-portfolio" class="nav-link">Portfólio</a></li>
-						<li class="nav-item"><a href="#" class="nav-link">Contato</a></li>
-					</ul>
-				</div>
-
-				<!--<div class="login-button">
-					<button><a href="#">Entrar</a></button>
-				</div>-->
-
-				<div class="mobile-menu-icon">
-					<button onclick="menuShow()"><img class="icon" src="icones/menu.png"></button>
-				</div>
-			</nav>
-
-			<div class="mobile-menu">
-				<ul>
-					<li class="nav-item"><a href="#" class="nav-link">Inicío</a></li>
-						<li class="nav-item"><a href="#container-empresa" class="nav-link">A empresa</a></li>
-						<li class="nav-item"><a href="#container-servicos" class="nav-link">Serviços</a></li>
-						<li class="nav-item"><a href="#container-portfolio" class="nav-link">Portfólio</a></li>
-						<li class="nav-item"><a href="#container-contato" class="nav-link">Contato</a></li>
-				</ul>
+		<header class="header">
+			<a href="/" class="logo"><img src="imagens/logo.png.png"></a>
+			<nav class="nav">
+				<button class="btn-menu" 
+				aria-label="Abrir Menu" 
+				aria-haspopup="true" 
+				aria-controls="menu"
+				aria-expanded=" "
+				>Menu<span class="hamburger"></span></button>
 				
-				<!--<div class="login-button">
-					<button><a href="#">Entrar</a></button>
-				</div>-->
-			</div>			
-		</header>		
+				<ul class="menu" id="menu" role="menu">
+					<li><a href="">Início</a></li>
+					<li><a href="#container-empresa">A empresa</a></li>
+					<li><a href="#container-servicos">Serviços</a></li>
+					<li><a href="#container-portfolio">Portfólio</a></li>
+					<li><a href="#container-contato">Contato</a></li>
+				</ul>
+			</nav>
+		</header>    
 		<!----------FIM NAV-BAR RESPONSIVO---------->
 				
 			<!--LINK WHATSAPP-->
@@ -60,73 +40,71 @@
 			</div>
 			<!--LINK WHATSAPP-->
 			
-			<!--PRIMEIRA PÁGINA-->
+		<!----------PRIMEIRA PÁGINA---------->
+		<section class="containerproje">
+
+			<div>
+				<div id="prev" class="prevNext" onclick="prev()">
+					<a href="#"><span></span></a>
+				</div>
+				
+				<div id="next" class="prevNext" onclick="next()">
+					<a href="#"><span></span></a>
+				</div>
+			</div>	
+			
+			<div class="slide-container active">
+				<div class="slide">
+					<div class="contentproje">
+						<h3>GQuality</h3>
+						<p>
+							Comunicação visual
+						</p>
+						<!--<a href="#" class="bntproj">Saiba mais</a>-->
+						
+					</div>
+				</div>
+			</div>
+
+			<div class="slide-container">
+				<div class="slide">
+					<div class="contentproje">
+						<h3>GQuality</h3>
+						<p>
+							Comunicação visual
+						</p>
+						<!--<a href="#" class="bntproj">Saiba mais</a>-->
+						
+					</div>
+				</div>
+			</div>
+
+			<div class="slide-container">
+				<div class="slide">
+					<div class="contentproje">
+						<h3>GQuality</h3>
+						<p>
+							Comunicação visual
+						</p>
+						<!--<a href="#" class="bntproj">Saiba mais</a>-->
+						
+					</div>
+				</div>
+			</div>
+		</section>
 			
 
-			<section class="containerproje">
+			
+		<section id="scroll" class="demo">
+			<a href="#aEmpresa"><span></span></a>
+		</section>
 
-				<div>
-					<div id="prev" class="prevNext" onclick="prev()">
-						<a href="#"><span></span></a>
-					</div>
-					
-					<div id="next" class="prevNext" onclick="next()">
-						<a href="#"><span></span></a>
-					</div>
-				</div>	
-				
-				<div class="slide-container active">
-					<div class="slide">
-						<div class="contentproje">
-							<h3>GQuality</h3>
-							<p>
-								Comunicação visual
-							</p>
-							<!--<a href="#" class="bntproj">Saiba mais</a>-->
-							
-						</div>
-					</div>
-				</div>
+		<!--<div id="prev" onclick="prev()"> « </div>
 
-				<div class="slide-container">
-					<div class="slide">
-						<div class="contentproje">
-							<h3>GQuality</h3>
-							<p>
-								Comunicação visual
-							</p>
-							<!--<a href="#" class="bntproj">Saiba mais</a>-->
-							
-						</div>
-					</div>
-				</div>
-
-				<div class="slide-container">
-					<div class="slide">
-						<div class="contentproje">
-							<h3>GQuality</h3>
-							<p>
-								Comunicação visual
-							</p>
-							<!--<a href="#" class="bntproj">Saiba mais</a>-->
-							
-						</div>
-					</div>
-				</div>
-			</section>
-				
+		<div id="next" onclick="next()"> » </div>-->
 
 				
-			<section id="scroll" class="demo">
-				<a href="#aEmpresa"><span></span></a>
-			</section>
-
-			<!--<div id="prev" onclick="prev()"> « </div>
-
-			<div id="next" onclick="next()"> » </div>-->
-	
-					
-			<!--FIM PRIMEIRA PÁGINA-->
+		<!--FIM PRIMEIRA PÁGINA-->
 		
 		
 		<main class="secoes">	
@@ -142,7 +120,7 @@
 				</div>
 				<div class="aEmpresa2">
 					<p>
-						Ao contrário da crença popular, Lorem Ipsum não é simplesmente um texto aleatório. Tem raízes em uma peça da literatura latina clássica de 45 aC, com mais de 2000 anos. Richard McClintock, professor de latim do Hampden-Sydney College, na Virgínia.
+						Ao contrário da crença popular, Lorem Ipsum não é simplesmente um texto aleatório. Tem raízes em uma peça da literatura latina clássica de 45 aC, com mais de 2000 anos. Richard McClintock, professor de latim do Hampden-Sydney College, na Virgínia, pesquisou uma das palavras latinas mais obscuras, consectetur, de uma passagem de Lorem Ipsum, e percorrendo as citações da palavra na literatura clássica, descobriu a fonte indubitável. Lorem Ipsum vem das seções 1.10.32 e 1.10.33 de "de Finibus Bonorum et Malorum" (Os Extremos do Bem e do Mal) de Cícero, escrito em 45 aC.
 					</p>
 				</div>	
 			</section>
