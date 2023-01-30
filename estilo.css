@@ -152,6 +152,7 @@ a {
 	position:fixed;
 	bottom: 60px;
 	right: 5px;
+	/*box-shadow: 2px 2px 3px #999;*/
 }
 
 @media screen and (max-width: 730px) {
@@ -311,10 +312,6 @@ a {
 	width: 100vw;
 }
 
-.aEmpresa img{
-	width: 100vw;
-}
-
 .aEmpresa2{
 	display: flex;
 	flex-direction: column;
@@ -329,7 +326,7 @@ a {
 	margin-top: 50px;
 	text-decoration: underline;
 	color: var(--azure);
-	font-size: 30px;
+	font-size: 35px;
 }
 
 .aEmpresa2 h1{
@@ -338,28 +335,33 @@ a {
 
 .aEmpresa p{
 	font-size: 15px;
-	margin: 10px 30px 20px 30px;
+	margin: 0px 60px 0px 60px;
 	text-align: center;
+	line-height: 2;
 }
 
-.aEmpresa2 p{
-	font-size: 15px;
-	margin: 35px 30px 20px 30px;
-	text-align: center;
+@media screen and (max-width: 730px) {
+	
+	.aEmpresa img{
+		width: 100vw;
+	}
 }
 /*----------FIM A EMPRESA----------*/
 
 
 /*----------SERVIÇOS----------*/
-#container-servicos{
-	/*background-image: url(#);
-	background-size: 100%;
-	background-repeat: no-repeat;
-	background-attachment: fixed;*/
+.servicos {
 	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-evenly;
-	/*background-image: linear-gradient(to bottom, rgba(155, 218, 255, 0.562), rgba(255, 255, 255, 0.514));*/
+	flex-direction: column;
+	align-items: center;
+}
+
+.servicos h1{
+	margin: 50px 0 25px 0;
+	text-align: center;
+	text-decoration: underline;
+	color: var(--azure);
+	font-size: 35px;
 }
 
 .flex-containerServicos{
@@ -367,83 +369,81 @@ a {
 	flex-wrap: wrap;
 	justify-content:center;
 	gap: 2em;
-	margin-top: 20px;
-	margin: 2% 10% 0 10%;
-}
-
-.servicos h1{
-	margin-top: 50px;
-	text-align: center;
-	text-decoration: underline;
-	color: var(--azure);
-	font-size: 30px;
 }
 
 .flex-containerServicos .flex-item{
-	width: 290px;
+	width: 320px;
 	height: 265px;
 	text-align: center;
 	font-size: 15px;
+	border-radius: 0 20px 0 20px;
+	box-shadow: -4px 4px 10px 2px rgba(0, 0, 0, 0.2);
+}
+
+.flex-containerServicos .iconeServicos {
+	background: #e0e5eb;
+	border-radius: 50px;
+	margin-top: 5px;
 }
 
 .flex-item p{
 	margin-top: 15px;
-	font-size: 15px;
+	font-size: 13px;
 	text-align:center;
+	padding: 10px;
 }
 
 .flex-item h4{
 	font-size: 25px;
+	padding: 10px;
 }
 
 .iconeServicos{
 	width: 80px;
 	height: 80px;
+	padding: 10px;
 }
 /*----------FIM SERVIÇOS----------*/
 
 
 /*----------PORTFÓLIO----------*/
-#container-portfolio{
+.portfolio {
 	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-evenly;
-	background-color: var(--background);
+	flex-direction: column;
+	align-items: center;
+}
+
+.portfolio h1{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin: 25px 0 0 30px;
+	color: black;
+	width: 350px;
+	height: 150px;
+	text-align: left;
+	font-size: 35px;
 }
 
 .flex-containerPortfolio{
 	display: flex;
 	flex-wrap: wrap;
-	justify-content:center;
-	gap: 2em;
-	margin: 2% 10% 2% 10%;
-}
-
-.flex-containerPortfolio .flex-item{
-	width: 290px;
-	height: 265px;
-}
-
-.portfolio h1{
-	width: 280px;
-	margin-top: 50px;
-	text-align: left;
-	font-size: 30px;
-	margin-left: auto;
-    margin-right: auto;
+	justify-content: space-evenly;
+	margin: 0 80px 0 80px;
 }
 
 .flex-containerPortfolio img{
 	border: 10px solid transparent;
-	width: 290px;
-	height: 265px;
+	width: 350px;
+	height: 280px;
 }
 
 .flex-containerPortfolio img:hover{
 	cursor: pointer;
 	border: 10px solid var(--azure);
 	/*transform: scale(1.2);*/
-	transition: 0.3s;
+	transition: 0.4s;
+	
 }
 
 .azul{
@@ -452,9 +452,8 @@ a {
 }
 
 @media screen and (max-width: 730px) {
-
 	.flex-containerPortfolio{
-		margin: 50px 10% 50px 10%;
+		margin: 0;
 	}
 }
 /*----------FIM PORTFÓLIO----------*/
@@ -572,7 +571,7 @@ footer{
 	width: 100%;
 	height: 60px;
 	font-size: 15px;
-	background-color: rgb(39, 39, 39);
+	background-color: #292d33;
 	color: var(--white);
 	margin-top: 100px;
 }
