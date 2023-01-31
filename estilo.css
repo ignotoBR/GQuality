@@ -243,17 +243,17 @@ a {
 	}
 
 	.containerproje .slide-container:nth-child(2) .slide{
-		background: url(./imagens/img1.1.jpg);
+		background: url(./imagens/img3.5.jpg);
 		background-size: cover;
 		background-repeat: no-repeat;
 	}
 	.containerproje .slide-container:nth-child(3) .slide{
-		background: url(./imagens/img3.3.jpg);
+		background: url(./imagens/img9.1.jpg);
 		background-size: cover;
 		background-repeat: no-repeat;
 	}
 	.containerproje .slide-container:nth-child(4) .slide{
-		background: url(./imagens/img2.2.jpg);
+		background: url(./imagens/img10.1.jpg);
 		background-size: cover;
 		background-repeat: no-repeat;
 	}
