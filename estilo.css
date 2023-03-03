@@ -178,7 +178,7 @@ a {
 }
 
 .containerproje .slide-container .slide{
-    min-height: 40vh;
+    min-height: 45vh;
     display: flex;
     align-items: center;
     /*flex-wrap: wrap;
@@ -224,19 +224,22 @@ a {
 }
 
 .containerproje .slide-container:nth-child(2) .slide{
-    background: url(./imagens/cielo1.jpeg);
+    background: url(./imagens/primeiraPagina/muffato.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+	background-position: center;
 }
 .containerproje .slide-container:nth-child(3) .slide{
-    background: url(./imagens/doffee1.jpg);
+    background: url(./imagens/primeiraPagina/doffee1.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+	background-position: center;
 }
 .containerproje .slide-container:nth-child(4) .slide{
-	background: url(./imagens/expofazenda1.jpg);
+	background: url(./imagens/primeiraPagina/familia-ferragens.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+	background-position: center;
 }
 
 @media screen and (max-width: 730px) {
@@ -273,7 +276,7 @@ a {
 .prevNext a {
 	position: absolute;
 	top: 20vh;
-	width: 100vw;
+	width: 98.5vw;
 	z-index: 1;
 	color: var(--white);
 	transition: opacity .3s;
