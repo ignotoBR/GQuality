@@ -364,7 +364,7 @@ a {
 
 	.aEmpresa p{
 		font-size: 14px;
-		margin: 0px 30px 0px 30px;
+		margin: 0px 35px 0px 35px;
 		text-align: center;
 		line-height: 2;
 	}
@@ -503,7 +503,7 @@ a {
 	width: 100vw;
 	height: 400px;
 	box-shadow: -4px 4px 10px 2px rgba(0, 0, 0, 0.2);
-	margin-bottom: 50px;
+	margin-bottom: 30px;
 }
 
 .contato h1{
@@ -530,15 +530,11 @@ a {
 @media screen and (max-width: 730px) {
 
 	.contato {
-		width: 90vw;
+		width: 100vw;
 	}
 
 	.contato h1{
 		font-size: 25px;
-	}
-
-	.entre_em_contato .icone{
-		width: 90vw;
 	}
 
 	.imgContato img{
@@ -547,6 +543,11 @@ a {
 
 	.textoContato{
 		font-size: 15px;
+	}
+
+	.entre_em_contato .icone{
+		display: flex;
+		margin: 35px 15px 0px 40px;
 	}
 }
 /*----------FIM CONTATO----------*/
@@ -562,7 +563,7 @@ a {
 @media screen and (max-width: 730px) {
 
 	#mapa{
-		width: 90vw;
+		width: 100vw;
 	}
 }
 /*----------FIM MAPA----------*/
