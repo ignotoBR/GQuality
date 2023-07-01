@@ -27,7 +27,6 @@ body {
 }
 
 a {
-    color: rgb(0, 0, 0);
     text-decoration: none;
 }
 
@@ -39,22 +38,38 @@ a {
 	width: 100vw;
     align-items: center;
     justify-content: center;
-    background: var(--midnight-blue);
     height: 30px;
     padding: 1rem;
+	
 }
+
+
 
 .menu {
     list-style: none;
     display: flex;
-    gap: 0.5rem;
+	align-items: center;
+    justify-content: center;
+	width: 100vw;
+	
 }
+
+#menu {
+    transition: background-color 0.3s ease-in-out;
+	
+}
+
+.mudaCor{
+    background-color:#ffffff;
+	
+}
+
+
 
 .menu a {
     display: block;
     padding: 1rem;
-	font-size: 14px;
-	color: rgb(255, 255, 255);
+	color: black;
 }
 
 .menu a:hover {
