@@ -124,6 +124,7 @@ body {
         padding-block: 1rem;
         cursor: pointer;
 		border: 2px solid blue;
+		margin-right: 10px;
     }
 
     .hamburger {
@@ -140,7 +141,7 @@ body {
         background: currentColor;
         margin-top: 0.3125rem;
         position: relative;
-        transition: 0.5s;
+		transition: 0.3s;
 		
     }
     
@@ -152,7 +153,7 @@ body {
 		align-items: center;
         visibility: visible;
 		border-radius: 0px 0px 25px 25px;
-		
+		transition: 0.3s;
     }
 
     .nav.active .hamburger {
