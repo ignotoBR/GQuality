@@ -38,7 +38,7 @@ a {
 	width: 100vw;
     align-items: center;
     justify-content: center;
-    height: 50px;
+    height: 60px;
 	
 }
 
@@ -96,9 +96,13 @@ a {
 }
 
 @media (max-width: 700px) {
+
+	.nav{
+		margin-right: 30px;
+	}
+
     .header{
 		background-color: var(--background);
-		height: 55px;
 		justify-content: space-between;
 		transition: 0.2s;
 	}
@@ -109,7 +113,7 @@ a {
         left: 0;
         background: var(--background);
         text-align: center;
-        width: 96.7vw;
+        width: 100vw;
         height: 0;
         z-index: 3;
         visibility: hidden;
@@ -163,7 +167,7 @@ a {
     }
     
     .nav.active .menu {
-        height: 265px;
+        height: 280px;
 		align-items: center;
         visibility: visible;
         overflow-y: auto;
@@ -465,6 +469,7 @@ a {
 
 
 /*----------PORTFÓLIO----------*/
+
 .portfolio {
 	display: flex;
 	flex-direction: column;
