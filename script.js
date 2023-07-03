@@ -78,7 +78,7 @@ btnMenu.addEventListener("touchstart", handleButtonClick);
 
 /*Transição Nav-Bar*/
 var el = document.getElementById('menu'); // elemento alvo
-var numPx = '650'; // Quantidade de pixels a contar do TOP até definir a cor
+var numPx = '550'; // Quantidade de pixels a contar do TOP até definir a cor
 
 window.addEventListener('scroll', function() {
     if (window.scrollY > numPx) {
