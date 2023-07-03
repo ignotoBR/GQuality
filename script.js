@@ -76,14 +76,9 @@ btnMenu.addEventListener("click", handleButtonClick);
 btnMenu.addEventListener("touchstart", handleButtonClick);
 
 
-
-
-
-
-
-
+/*Transição Nav-Bar*/
 var el = document.getElementById('menu'); // elemento alvo
-var numPx = '250'; // Quantidade de pixels a contar do TOP até definir a cor
+var numPx = '650'; // Quantidade de pixels a contar do TOP até definir a cor
 
 window.addEventListener('scroll', function() {
     if (window.scrollY > numPx) {
@@ -92,3 +87,4 @@ window.addEventListener('scroll', function() {
       el.classList.remove('mudaCor'); // remove classe "mudaCor"
     }
 });
+

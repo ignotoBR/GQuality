@@ -38,37 +38,45 @@ a {
 	width: 100vw;
     align-items: center;
     justify-content: center;
-    height: 30px;
-    padding: 1rem;
+    height: 50px;
 	
 }
 
+.arrow-down {
+    height: 55px;
+    margin-left: 50%;
+    transform: translate(-50%, 0);
+    background: url("https://res.cloudinary.com/abdel-rahman-ali/image/upload/v1535988515/arrow-down.png") no-repeat center;
+}
 
 
 .menu {
     list-style: none;
     display: flex;
-	align-items: center;
+	align-items:center;
     justify-content: center;
 	width: 100vw;
-	
+	margin-top: 30px;
 }
 
 #menu {
-    transition: background-color 0.3s ease-in-out;
-	
+    transition: background-color 0.2s ease-in-out;
 }
 
 .mudaCor{
     background-color:#ffffff;
-	
+	height: 80px;
+	display: flex;
+	align-items:center;
+    justify-content: center;
+	margin-top: 30px;
+	border: 2px solid green;
 }
-
-
 
 .menu a {
     display: block;
-    padding: 1rem;
+	font-size: 20px;
+    padding: 3rem;
 	color: black;
 }
 
@@ -92,6 +100,7 @@ a {
 		background-color: var(--background);
 		height: 55px;
 		justify-content: space-between;
+		transition: 0.2s;
 	}
 	
 	.menu {
@@ -100,20 +109,28 @@ a {
         left: 0;
         background: var(--background);
         text-align: center;
-        width: 100vw;
+        width: 96.7vw;
         height: 0;
         z-index: 3;
         visibility: hidden;
         overflow-y: hidden;
         transition: 0.5s;
+		margin-top: 0px;
     }
+
+	.mudaCor{
+		background-color:#ffffff;
+		height: 100px;
+		margin-top: 0px;
+		
+	}
 
     .menu a {
         padding: 1rem 0;
         margin-inline: 1rem;
         border-bottom: 0.0625rem solid rgba(0, 0, 0, 0.16);
 		font-weight: 600;
-		color: var(--midnight-blue);
+		color: black;
     }
 
     .btn-menu {
@@ -128,17 +145,17 @@ a {
     }
 
     .hamburger {
-        border-top: 0.125rem solid;
-        width: 1.25rem;
-		margin-right: 10px;
+        border-top: 0.190rem solid;
+        width: 1.60rem;
+		margin-right: 25px;
     }
     
     .hamburger::before,
     .hamburger::after {
         content: " ";
         display: block;
-        width: 1.25rem;
-        height: 0.125rem;
+        width: 1.60rem;
+        height: 0.160rem;
         background: currentColor;
         margin-top: 0.3125rem;
         position: relative;
@@ -171,9 +188,9 @@ a {
 
 /*----------BOTÃO WHATSAPP----------*/
 .whats img{
-	width: 300px;
+	width: 15%;
 	position:fixed;
-	bottom: 60px;
+	bottom: 10px;
 	right: 5px;
 	/*box-shadow: 2px 2px 3px #999;*/
 }
@@ -193,7 +210,7 @@ a {
 }
 
 .containerproje .slide-container .slide{
-    min-height: 45vh;
+    min-height: 85vh;
     display: flex;
     align-items: center;
     /*flex-wrap: wrap;
@@ -290,7 +307,7 @@ a {
 /*----------PRÓXIMO SLIDE----------*/
 .prevNext a {
 	position: absolute;
-	top: 23vh;
+	top: 42.5vh;
 	width: 98.5vw;
 	z-index: 1;
 	color: var(--white);
@@ -302,10 +319,11 @@ a {
 	opacity: .5;
 }
 
+
 #prev a span {
 	position: absolute;
-	width: 20px;
-	height: 20px;
+	width: 25px;
+	height: 25px;
 	left: 20px;
 	border-left: 1px solid #fff;
 	border-bottom: 1px solid #fff;
@@ -314,8 +332,8 @@ a {
 
 #next a span {
 	position: absolute;
-	width: 20px;
-	height: 20px;
+	width: 25px;
+	height: 25px;
 	right: 20px;
 	border-left: 1px solid #fff;
 	border-bottom: 1px solid #fff;
@@ -327,26 +345,15 @@ a {
 /*----------A EMPRESA----------*/
 #container-empresa {
 	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-evenly;
+	border: 2px solid black;
 }
 
 .aEmpresa{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	width: 100vw;
-	margin: 0 15% 0 15%;
-}
-
-.aEmpresa2{
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	width: 100vw;
-	background-size: 100% 130%;
-	background-position: 0%;
-	background-repeat: no-repeat;
+	margin: 4% 0 4% 0;
+	border: 2px solid yellow;
 }
 
 .aEmpresa h1{
@@ -369,6 +376,16 @@ a {
 
 @media screen and (max-width: 730px) {
 	
+	#container-empresa {
+		display: flex;
+		flex-direction: column;
+		border: 2px solid black;
+	}
+
+	.aEmpresa{
+		margin: 0% 0 0% 0;
+	}
+
 	.aEmpresa img{
 		width: 100vw;
 	}
@@ -385,6 +402,7 @@ a {
 
 /*----------SERVIÇOS----------*/
 #container-servicos {
+	background-color: #c4cdff;
 	/*background-image: linear-gradient(to top, var(--azure), var(--background) , var(--azure));*/
 }
 
@@ -610,7 +628,7 @@ footer{
 	align-items: center;
 	justify-content: center;
 	width: 100%;
-	height: 60px;
+	height: 400px;
 	margin-top: 20px;
 	font-size: 15px;
 	background-color: #292d33;
