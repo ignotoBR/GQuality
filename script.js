@@ -29,6 +29,7 @@ function prev(){
 setInterval(next, 10000);
 /*FIM PRIMEIRA PÁGINA*/
 
+
 const nav = document.querySelector(".nav");
 const btnMenu = document.querySelector(".btn-menu");
 const menu = document.querySelector(".menu");
