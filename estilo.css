@@ -12,6 +12,12 @@ html {
 }
 
 :root {
+	--amarelo:#FFD857;
+	--azul: #60AAE7;
+	--escuro: #1A160A;
+	--cinza: #B6A98B;
+	--bege: #FFF7E5;
+
     --white: #fff;
     --midnight-blue: #001177;
     --green-blue: #1068bd;
@@ -45,7 +51,7 @@ body {
 }
 
 .mudaCor {
-    background-color:#292d33;
+    background-color:#1A160A;
 }
 
 .header .nav .menu a {
@@ -78,7 +84,7 @@ body {
     .header{
 		background-color: var(--background);
 		width: 100%;
-		height: 50px;
+		height: 45px;
 		justify-content: end;
 	}
 
@@ -123,7 +129,7 @@ body {
         gap: 0.5rem;
         padding-block: 1rem;
         cursor: pointer;
-		margin-top: 10px;
+		margin-top: 5px;
 		margin-right: 30px;
 		color: #000000;
     }
@@ -359,8 +365,8 @@ body {
 	justify-content: space-around;
 	align-items: center;
 	width: 50%;
-	background-color: var(--midnight-blue);
 	border: 2px solid rgb(0, 255, 213);
+	background-color: #22334a;
 }
 
 .aEmpresaImagens .imagensPag2 img {
@@ -408,7 +414,7 @@ body {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	background-color: #c4cdff;
+	background-color: #FFD857;
 	/*background-image: linear-gradient(to top, var(--azure), var(--background) , var(--azure));*/
 }
 
@@ -525,7 +531,8 @@ body {
 
 	.portfolio h1{
 		margin: 20px 0 0 0;
-		text-align: center;
+		text-align: left;
+		font-size: 30px;
 	}
 }
 /*----------FIM PORTFÓLIO----------*/
@@ -536,7 +543,7 @@ body {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-evenly;
-	
+	background-color: var(--escuro);
 }
 
 .contato{
@@ -545,12 +552,15 @@ body {
 	align-items: center;
 	width: 40vw;
 	height: 400px;
-	box-shadow: -4px 4px 10px 2px rgba(0, 0, 0, 0.2);
+	/*box-shadow: -4px 4px 10px 2px rgba(0, 0, 0, 0.2);*/
+	
 }
 
 .contato h1{
 	margin-top: 15px;
 	font-size: 40px;
+	color: white;
+	text-decoration: underline;
 }
 
 .entre_em_contato .icone{
@@ -565,11 +575,25 @@ body {
 }
 
 .textoContato{
+	display: flex;
+	align-items: center;
 	font-size: 20px;
 	margin-left: 10px;
+	color: white;
+	text-decoration: none;
 }
 
-/*----------MAPA----------*/
+.textoContato a {
+	text-decoration: none;
+	color: white;
+}
+
+.textoContato a:hover {
+	border-bottom: 2px solid white;
+	border-bottom-width: 3px;
+}
+
+/*---MAPA---*/
 #mapa{
 	width: 40vw;
 	height: 400px;
@@ -582,7 +606,7 @@ body {
 		width: 90vw;
 	}
 }
-/*----------FIM MAPA----------*/
+/*---FIM MAPA---*/
 
 @media screen and (max-width: 730px) {
 
@@ -612,12 +636,7 @@ body {
 		margin: 35px 15px 0px 10px;
 	}
 }
-
-
 /*----------FIM CONTATO----------*/
-
-
-
 
 
 /*----------ANIMAÇÕES----------*/
