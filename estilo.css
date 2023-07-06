@@ -543,7 +543,7 @@ body {
 }
 
 .contato h1{
-	margin-top: 15px;
+	margin-top: 45px;
 	font-size: 40px;
 	color: white;
 	text-decoration: underline;
@@ -616,7 +616,7 @@ body {
 	}
 
 	.textoContato{
-		font-size: 15px;
+		font-size: 0.8rem;
 	}
 
 	.entre_em_contato .icone{
