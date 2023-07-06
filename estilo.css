@@ -300,7 +300,7 @@ body {
 	opacity: .5;
 }
 
-#prev a span {
+#prevv a span {
 	position: absolute;
 	width: 25px;
 	height: 25px;
@@ -310,7 +310,7 @@ body {
 	transform: rotate(45deg);	
 }
 
-#next a span {
+#nextt a span {
 	position: absolute;
 	width: 25px;
 	height: 25px;
@@ -475,6 +475,7 @@ body {
 	color: rgb(255, 255, 255);
 	font-size: 45px;
 	letter-spacing: 1px;
+	line-height: 48px;
 }
 
 .flex-containerPortfolio{
@@ -520,8 +521,83 @@ body {
 		margin: 40px 0 0 0;
 		text-align: left;
 		font-size: 30px;
+		line-height: 35px;
 	}
 }
+
+
+
+.gallery {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	padding: 10px;
+	gap: 20px 20px;
+	margin: 0px 50px 0px 50px;
+  }
+  
+  .gallery-image {
+	height: 350px;
+	cursor: pointer;
+	transition: transform 0.3s;
+  }
+  
+  .gallery-image:hover {
+	filter: brightness(50%);
+	transition: 0.5s;
+  }
+  
+  .modal-overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.8);
+	display: none;
+	align-items: center;
+	justify-content: center;
+  }
+  
+  .modal-image {
+	max-width: 90%;
+	max-height: 90%;
+  }
+  
+  .close {
+	position: absolute;
+	top: 45px;
+	right: 20px;
+	color: #fff;
+	font-size: 80px;
+	font-weight: bold;
+	cursor: pointer;
+  }
+  
+  .next,
+  .prev {
+	position: absolute;
+	top: 50%;
+	color: #ffffff;
+	font-size: 0px; /*tamanho da seta para mudar de imagem*/
+	font-weight: bold;
+	cursor: pointer;
+	display: none;
+	z-index: 999;
+	user-select: none;
+  }
+  
+  .next {
+	right: 20px;
+  }
+  
+  .prev {
+	left: 20px;
+  }
+
+
+
+
 /*----------FIM PORTFÓLIO----------*/
 
 

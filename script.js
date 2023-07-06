@@ -90,3 +90,74 @@ window.addEventListener('scroll', function() {
 });
 
 
+
+
+
+
+
+
+
+const galleryImages = document.querySelectorAll('.gallery-image');
+const modalOverlay = document.querySelector('.modal-overlay');
+const modalImage = document.querySelector('.modal-image');
+const closeModal = document.querySelector('.close');
+const nextButton = document.querySelector('.next');
+const prevButton = document.querySelector('.prev');
+
+let currentImageIndex = 0;
+
+function openModal(imageIndex) {
+  modalImage.src = galleryImages[imageIndex].src;
+  modalOverlay.style.display = 'flex';
+  currentImageIndex = imageIndex;
+  updateNavigationButtons();
+}
+
+function closeModalHandler() {
+  modalOverlay.style.display = 'none';
+}
+
+function nextImage() {
+  currentImageIndex = (currentImageIndex + 1) % galleryImages.length;
+  modalImage.src = galleryImages[currentImageIndex].src;
+  updateNavigationButtons();
+}
+
+function previousImage() {
+  currentImageIndex = (currentImageIndex - 1 + galleryImages.length) % galleryImages.length;
+  modalImage.src = galleryImages[currentImageIndex].src;
+  updateNavigationButtons();
+}
+
+function updateNavigationButtons() {
+  nextButton.style.display = currentImageIndex === galleryImages.length - 1 ? 'none' : 'block';
+  prevButton.style.display = currentImageIndex === 0 ? 'none' : 'block';
+}
+
+galleryImages.forEach((image, index) => {
+  image.addEventListener('click', () => {
+    openModal(index);
+  });
+});
+
+closeModal.addEventListener('click', closeModalHandler);
+
+modalOverlay.addEventListener('click', (event) => {
+  if (event.target === modalOverlay) {
+    closeModalHandler();
+  }
+});
+
+document.addEventListener('keydown', (event) => {
+  if (event.key === 'Escape') {
+    closeModalHandler();
+  } else if (event.key === 'ArrowRight') {
+    nextImage();
+  } else if (event.key === 'ArrowLeft') {
+    previousImage();
+  }
+});
+
+nextButton.addEventListener('click', nextImage);
+prevButton.addEventListener('click', previousImage);
+
