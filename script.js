@@ -105,33 +105,41 @@ const nextButton = document.querySelector('.next');
 const prevButton = document.querySelector('.prev');
 
 let currentImageIndex = 0;
+let isModalOpen = false; // Variável para verificar se o modal está aberto
 
 function openModal(imageIndex) {
   modalImage.src = galleryImages[imageIndex].src;
   modalOverlay.style.display = 'flex';
   currentImageIndex = imageIndex;
+  isModalOpen = true; // Define o modal como aberto
   updateNavigationButtons();
 }
 
 function closeModalHandler() {
   modalOverlay.style.display = 'none';
+  isModalOpen = false; // Define o modal como fechado
+  updateNavigationButtons();
 }
 
 function nextImage() {
-  currentImageIndex = (currentImageIndex + 1) % galleryImages.length;
-  modalImage.src = galleryImages[currentImageIndex].src;
-  updateNavigationButtons();
+  if (isModalOpen) {
+    currentImageIndex = (currentImageIndex + 1) % galleryImages.length;
+    modalImage.src = galleryImages[currentImageIndex].src;
+    updateNavigationButtons();
+  }
 }
 
 function previousImage() {
-  currentImageIndex = (currentImageIndex - 1 + galleryImages.length) % galleryImages.length;
-  modalImage.src = galleryImages[currentImageIndex].src;
-  updateNavigationButtons();
+  if (isModalOpen) {
+    currentImageIndex = (currentImageIndex - 1 + galleryImages.length) % galleryImages.length;
+    modalImage.src = galleryImages[currentImageIndex].src;
+    updateNavigationButtons();
+  }
 }
 
 function updateNavigationButtons() {
-  nextButton.style.display = currentImageIndex === galleryImages.length - 1 ? 'none' : 'block';
-  prevButton.style.display = currentImageIndex === 0 ? 'none' : 'block';
+  nextButton.style.display = isModalOpen && currentImageIndex !== galleryImages.length - 1 ? 'block' : 'none';
+  prevButton.style.display = isModalOpen && currentImageIndex !== 0 ? 'block' : 'none';
 }
 
 galleryImages.forEach((image, index) => {

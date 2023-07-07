@@ -526,7 +526,7 @@ body {
 }
 
 
-
+/*---GALERIA PORTFOLIO---*/
 .gallery {
 	display: flex;
 	flex-wrap: wrap;
@@ -577,11 +577,11 @@ body {
   
   .next,
   .prev {
-	position: absolute;
-	top: 50%;
+	position: fixed;
+	top: 45%;
 	color: #ffffff;
-	font-size: 0px; /*tamanho da seta para mudar de imagem*/
-	font-weight: bold;
+	font-size: 70px;
+	/*font-weight: bold;*/
 	cursor: pointer;
 	display: none;
 	z-index: 999;
@@ -599,19 +599,18 @@ body {
   @media screen and (max-width: 730px) {
 	
 	.gallery {
-		gap: 5px 5px;
-		margin: 0px 10px 0px 10px;
+		gap: 3px 3px;
+		margin: 0px 0px 0px 0px;
 	}
 
 	.gallery-image {
-		width: 170px;
-		height: 170px;
+		width: 160px;
+		height: 160px;
 		cursor: pointer;
 		transition: transform 0.3s;
 	}
-
 }
-
+/*---FIM GALERIA PORTFOLIO---*/
 
 
 
